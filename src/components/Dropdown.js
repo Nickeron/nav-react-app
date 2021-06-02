@@ -9,10 +9,7 @@ const Dropdown = ({ label, selected, options, onSelectionChange }) =>
 	{
 		const onBodyClick = event => 
 		{
-			if (ref.current.contains(event.target)) 
-			{
-				return;
-			}
+			if (ref.current.contains(event.target)) { return; }
 
 			setOpen(false);
 		};
@@ -27,10 +24,7 @@ const Dropdown = ({ label, selected, options, onSelectionChange }) =>
 
 	const renderedOptions = options.map(option => 
 		{
-			if(option.value === selected.value)
-			{
-				return null;
-			}
+			if(option.value === selected.value)	{ return null; }
 
 			return (
 				<div 

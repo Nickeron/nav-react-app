@@ -6,7 +6,8 @@ import Translate from './components/Translate';
 import Route from './components/Route';
 import Header from './components/Header';
 
-const items = [
+const items = 
+[
 	{
 		title: 'What is React?',
 		content: 'React is a front end js framework'
@@ -21,7 +22,8 @@ const items = [
 	}
 ];
 
-const options = [
+const options = 
+[
 	{
 		label: 'Red',
 		value: 'red'
@@ -36,7 +38,8 @@ const options = [
 	}
 ];
 
-const App = () => {
+const App = () => 
+{
 	const [selected, setSelected] = useState(options[0]);
 	const [showDropdown, setShowDropdown] = useState(true);
 
